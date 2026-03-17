@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Build EXE
-        run: npx electron-packager . MandinePOS --platform=win32 --arch=x64
+        run: npx electron-packager . MandinePOS --platform=win32 --arch=x64 --icon=icon.ico
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
